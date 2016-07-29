@@ -1,4 +1,6 @@
-import sys, json
+import sys, json,
+import base64
+
 
 # Load the data that PHP sent us
 try:
