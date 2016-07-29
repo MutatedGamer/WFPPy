@@ -1,20 +1,46 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Python Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="stylesheets/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.ajax({
+   
+   url: "/cgi-bin/python1.py",
+       alert("Data Saved: " + msg);
+});
+</script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">"></script>
+
+    <script>
+
+$(function() {
+
+      $("#button").click( function()
+           {
+           	$.ajax({
+  type: "POST",
+  url: "http://pythonprog.mybluemix.net/rec.py",
+  data: { param: "0, 0, 1"}
+})
+	alert("Worked");
+   // do something
+});
+   
+   url: "http://pythonprog.mybluemix.net/rec.py";
+       alert("Worked");
+});
+           }
+      );
+});
+    </script>
 </head>
 <body>
-	<table>
-		<tr>
-			<td style='width: 30%;'><img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message">Hello World</h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">Python Starter Application</span>. To get started see the Start Coding guide under your app in your dashboard.
-			</td>
-		</tr>
-	</table>
+hello
+<form action="" type="POST">
+<input style="position: absolute; right: 15px; width: 100px; height:30px" type="button" class ="button" id="button" name="submit" value="Submit"><br>
+</form>
 </body>
-</html>
